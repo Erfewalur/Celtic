@@ -1,0 +1,1594 @@
+<html lang="de">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="icon" sizes="192x192" href="Bilder/Celtic Logo.png">
+  <title>Nebenmissionen in Celtic</title>
+</head>
+<style>
+  #pic {
+    background: url(Bilder/Celtic\ Profil\ 4.webp) center no-repeat;
+    background-size: cover;
+    height: 480px;
+    overflow: hidden;
+  }
+</style>
+
+<body>
+  <div id="pic" class="d-none d-sm-block"></div>
+  <!-- NAVIGATIONSLEISTE -->
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: #175815;">
+        <div class="container-fluid">
+          <span class="navbar-brand"></span>
+          <div id=menue class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><b>Startseite</b></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false"><b>Handlung</b></a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="1. Prolog.html">Prolog</a></li>
+                  <li><a class="dropdown-item" href="2. Hauptstory.html">Hauptstory - Westliche Alpen</a></li>
+                    <li><a class="dropdown-item" href="3. Nebenstory.html">Nebenstorys</a></li>
+                  <li><a class="dropdown-item" href="4. Völker.html">Völker</a></li>
+                  <li><a class="dropdown-item" href="5. Sammlungen.html">Sammlungen</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="10. Geschichte.html"><b>Geschichtlicher Hintergrund</b></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Gameplay</b></a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="20. Spielprinzip.html">Spielprinzip</a></li>
+                  <li><a class="dropdown-item" href="21. Technik.html">Technik</a></li>
+                  <li><a class="dropdown-item" href="22. Charaktere.html">Charaktere</a></li>
+                  <li><a class="dropdown-item" href="23. Umgebungen.html">Umgebungen</a></li>
+                  <li><a class="dropdown-item" href="24. Bauwerke.html">Bauwerke</a></li>
+                  <li><a class="dropdown-item" href="25. Kaufleute in den Alpen.html">Kaufleute</a></li>
+                  <li><a class="dropdown-item" href="26. Gegenstände in der Spielwelt.html">Gegenstände</a></li>
+                  <li><a class="dropdown-item" href="27. Geräusche.html">Geräusche</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="31. Projekttagebuch.html"><b>Projekttagebuch</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="32. Datenschutz und Impressum.html"><b>Datenschutz und Impressum</b></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- SEITENINHALT -->
+    <div class="card-group" style="background-color: #155839;">
+      <div class="row">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex align-items-start">
+              <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-messages-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                  aria-selected="true" style="background-color: rgb(70, 68, 69);  color: black;"><b>Glaube</b></button>
+                <button class="nav-link" id="v-pills-military-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-military" type="button" role="tab" aria-controls="v-pills-military"
+                  aria-selected="false" style="background-color: rgb(73, 1, 19);  color: black;"><b>Militär</b></button>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                  aria-selected="false" style="background-color: rgb(25, 15, 82);  color: black;"><b>Politik</b></button>
+                <button class="nav-link" id="v-pills-supply-tab" data-bs-toggle="pill" data-bs-target="#v-pills-supply"
+                  type="button" role="tab" aria-controls="v-pills-supply" aria-selected="false" style="background-color: rgb(21, 82, 15);  color: black;"><b>Versorgung</b></button>
+              </div>
+              <!-- Nebenstory -->
+              <div class="tab-content" id="v-pills-tabContent">
+                <!-- Glaubenskarte -->
+                <div class="tab-pane fade show active" id="v-pills-messages" role="tabpanel"
+                  aria-labelledby="v-pills-messages-tab">
+                  <div id="accordion">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Die heilige Zeit (Teil der Nebenquest "Das Glaubensareal")
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                          Der Hauptcharakter des Spieles muss als Teil seiner Ausbildung im Heimatdorf, die
+                          Glaubensprüfung beim Hochdruiden bestehen. Teil der Prüfung
+                          ist das "Die Heilige Zeit der Götter" kennenzulernen, bei dem sich der Charakter durch
+                          bestimmte Rituale den Zugang zu den jeweiligen Göttern
+                          verschaffen kann. Dort verschafft sich der Spieler neue Waffentechniken und Materialien um
+                          dich auf neue Gegner vozubereiten. Zudem wird
+                          durch die Rituale der Heiligen Zeit die Glaubenskraft des Stammes verstärkt. Bei der
+                          Erschaffung von Kriegswaffen kann auch der Spieler
+                          eigene Wünsche und Ideen einbringen.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="true" aria-controls="collapseTwo">
+                            Samhain (31.Oktober/1. November) Keltischer Jahresbeginn > 2022: Halloween/Allerheiligen
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                          Nachdem ihr Euer Heimatdorf verlassen habt werdet ihr auf eure Reise mehreren "Heilige Orte"
+                          finden an denen ihr zu bestimmten Zeitpunkte
+                          durch einen Ritual zu ein Kampfareal in der Anderwelt kommt. Dort muss der Spieler versuchen
+                          gegen den Krieger des Cromm Cruach antreten
+                          und diesen besiegen um den Gott ein Blutopfer dazubringen. An Samhain kommt es in eurer
+                          Siedlung in den Abendstunde zu einem Zeitpunkt dazu
+                          das die Totengeister & Gespenster aus der Anderwelt schwärmen um an Fensterläden & Türen zu
+                          rütteln und und um Gaben zu betteln. Eure Druiden
+                          erhaschen daraufhin einen Blick in die Zukunft des Volkes, beschwören die Toten der Reise um
+                          um Rat zu bitten und Frieden zu schließen. Dabei
+                          schützt sich euer Volk und ihr mit den besorgten Knoblauch, Bilsenkraut und der Engelwurz als
+                          Schutz. Nachdem dies vollbracht ist erhält der
+                          Spieler das Strohopfer und den Segen des Cromm Cruach.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            Yule/Julfest (20.-23.Dezember) Wintersonnenwende > 2022: Weihnachtsvorzeit
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                          Am Heiligen Ort der Erde soll der Spieler mehrere Umgebungsrätsel lösen um Zugang zum
+                          Kampfareal des Gottes Cernunnos und seines Kriegers
+                          zu erhalten. An Yule müsst ihr in eurer Siedlung den Ort mit Stechpalme, Mistel, Efeu und
+                          Tannen- sowie Fichtengrün schmücken. In Gesprächen
+                          mit eurem Volk erfahrt ihr, dass sich die Vegetationsgottheit über den Winter in die
+                          immergrünen Zweige der Tanne & Fichte zurückgezogen
+                          hatte. Deshalb holte man sie sich nun ins Haus und erweckte sie mit Feuer zum Leben um das
+                          Sonnenkind wiederzubegähren. Darauf hin erscheint
+                          der Krieger des Hirschgott Cernunnos (“der Gehörnte”) stampft & wirbelt, um neues Leben
+                          anzuregen als Hirschtänzer auf. Nachdem dieser besiegt
+                          wurde erhaltet ihr Trophäe und den Segen des Cernunnos.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
+                            Imbolg (1./2. Februar)
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                          Hilf in deinem Dorf mit den reinigenden Räucherwerk als Anführer deines Volkes die
+                          "Krakheitsdämonen zu verteiben", die im Winter in den
+                          stickigen Räumen entstanden sind. Begehe daraufhin im heiligen Bad das Ritual der Reinigung um
+                          zu Brigit's Kampffeld in der Anderwelt zu
+                          gelangen. Nachdem du deren Krieger besiegt hast erhälst du den Birkensaft und den Segen der
+                          Brigit.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                            aria-expanded="false" aria-controls="collapseFive">
+                            Ostara (20.-23.März) Frühlings-Tagundnachtgleiche > 2022: Ostern
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                          Hilf den Bauern deines Volkes auf dem Acher und beim schmücken ihrer Felder. Danach kehre in
+                          dein Dorf zurück und hilf beim verstecken der
+                          Eier zu ehren der Göttin Ostara. Am abendlichen Ostarafest erhälst du nach der Einnahme des
+                          Ostaratranks Zugang zum Kampffeld der Ostara in
+                          der Anderwelt. Nachdem du ihre Kriegerinnen besiegt hast erhälst du eine Skulptur des Hasen,
+                          das Tier der Mondgöttin und den Segen der Ostara.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingSix">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                            aria-expanded="false" aria-controls="collapseSix">
+                            Beltane (1./2. Mai) > 2022: Maifest
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                        <div class="card-body">
+                          Nachdem ihr Euer Heimatdorf verlassen habt werdet ihr auf eure Reise mehrere heilige Quellen
+                          finden, an deren Ufern ihr heilige Rituale
+                          vornehmen solltet. Hin und wieder werdet ihr von den Göttern mit Gegenständen gesegnet. Diese
+                          könnt ihr für euer Sakralmonument aufsammeln.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingSeven">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"
+                            aria-expanded="false" aria-controls="collapseSeven">
+                            Litha (20.-24.Juni) Sommersonnenwende > 2022: Johannistag
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                        <div class="card-body">
+                          Bau beim des Lithabaums mit und sammel die Pflanzen für die rituellen Stirnbänder mit um beim
+                          abendlichen Johannisfeuer zugang zum Kampfareal
+                          des Baldur in der Anderwelt zu bekommen. Nachdem du ihre Krieger besiegt hast erhälst du die
+                          Früchtschale und den Segen des Baldur.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingEight">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight"
+                            aria-expanded="false" aria-controls="collapseEight">
+                            Lughnasad (31. Juli/1. August) > 2022: Bundesfeiertag in der Schweiz/Karneval
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                        <div class="card-body">
+                          Hilf deinen Bauern auf den Kornfeldern und hol die erste Kornernte ein. Zum Freudenfest des
+                          Abends gelangst du, nachdem du den Druidentrank
+                          getrunken hast durch den Kornrauch aufs Kampfareal des Lugh in der Anderwelt zu bekommen.
+                          Nachdem du ihre Krieger besiegt hast erhälst du die
+                          Strohpuppe und den Segen des Lugh.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingNine">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine"
+                            aria-expanded="true" aria-controls="collapseNine">
+                            Mabon (21.-29.September) Herbst-Tagundnachtgleiche > 2022: Europäisches Entedankfest
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                        <div class="card-body">
+                          Hilf den Waldbewohnern bei ihrer Ernte und erschaffe mit den Winzern die Weintränke. Zum
+                          Erntedankfest teilst du Nahrung, Wein und Wissen mit
+                          deinem Volk. Nachdem du den abschließenden Druidentrank zu dir genommen hast gelangst du in
+                          den Wäldern in die Anderwelt. Auf dem Kampfareal
+                          des Mabuz kämpfst du gegen die Krieger des Mabuz. Nachdem du seine Krieger besiegt hast
+                          erhälst du die Beeren und den Segen des Mabuz.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTen">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen"
+                            aria-expanded="false" aria-controls="collapseTen">
+                            Der Pfad der Götter
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                        <div class="card-body">
+                          Nachdem der Charakter alle stärkenden Segen erhalten und die Siegestrophäen bekommen hat,
+                          erfährt er durch einen seiner Träume das die Götter
+                          ihn in ein unbekanntes Höhlensystem bitten. In diesem soll er seine Trophäen an gewünschten
+                          Orten platzieren um den vernebelten "Pfad der
+                          Götter" zu öffnen. Auf dem Weg zum Ende des Pfades erhält der Spieler weitere Einblicke in die
+                          Geschichten des Götterhimmels der Kelten.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingEleven">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEleven"
+                            aria-expanded="false" aria-controls="collapseEleven">
+                            Das Reich der Götter (Bote des Glaubens)
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                          In der "Anderwelt" angekommen soll der Spieler eine Schar von gefangenen Seelen befreien um
+                          das Gleichgewicht der göttlichen Mächte
+                          herzustellen und die blutrünstigen Götter einzudämmen. An den verschiedenen Festtagen erhielt
+                          der Spieler die Segen der angebeteten Götter was
+                          ihn bei dieser Mission dazu verhilft das die Götter auf ihn hören und ihm einen Glaubensbonus
+                          geben. Um weitere göttliche Anhänger zu gewinnen,
+                          soll der Spieler 13 Aufgaben erledigen und so die Gunst der verbliebende Mächte erlangen. Die
+                          erste Aufgabe hat er mit seinen göttlichen
+                          Segensbonus schon erhalten und wird als "Bote des Glaubens" akzeptiert.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwelve">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwelve"
+                            aria-expanded="false" aria-controls="collapseTwelve">
+                            Das Reich der Götter (Galades)
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                          Bestreite die „zwölf Arbeiten“ des Galates: 6 Bestien, Erobere die Mine des Syncalus, schmiede
+                          eine Hallstattzeitliche Rüstung, Herbeischaffung
+                          der Bernsteinkrone des Gempalra, Raub der Blüten der Ostara, Pflücken der silbernen Kirschen
+                          der Kimarer und Verbannung der kannibalischen
+                          Affenwächter in die Oberwelt.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThirteen">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThirteen"
+                            aria-expanded="false" aria-controls="collapseThirteen">
+                            Das Reich der Götter (Teutates)
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                          Hilf der Rebellion der "Delemer" im Süden der Anderwelt um diese zum Gleichklang mit ihren
+                          Nachbarn zuführen. Deine Entscheidungen führen dich
+                          zu deren kannibalistischen Königin, die gerne Sklaven oder Stammesangehörige bei lebendigen
+                          Leibe fressen. Im Anschluss wirst du mit der
+                          Aufgabe betraut Oberste Anführer der Stämme zu ernennen.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingFourteen">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFourteen"
+                            aria-expanded="false" aria-controls="collapseFourteen">
+                            Das Reich der Götter (Epona)
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                          Rette die Pferde der "Epona" auf den östlichen Ebenen der Anderwelt um ihre Gunst zu erlangen.
+                          Deine Suche führt dich zum kannibalistischen
+                          Stamm der "Vura" die die Pferde für ihre jagt nach den Menschen der Anderwelt auf bestialische
+                          Weise quälen. Im Anschluss daran erhälst du von
+                          der Göttin das Füllhorn der Fruchtbarkeit für dein Volk.
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingFifteen">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFifteen"
+                              aria-expanded="false" aria-controls="collapseFifteen">
+                              Das Reich der Götter (Sirona)
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen"
+                          data-parent="#accordion">
+                          <div class="card-body">
+                            Finde die "Kinder der Sirona" im Osten der Anderwelt um ihr zu helfen. Deine Suche führt
+                            dich in die verfluchten Wälder des Gerembares wo
+                            dich riesige Schlangen, giftige Spinnen und mit rasiermesserscharfen Schnäbel versehende
+                            Raben angreifen. Nachdem du die Jünger der Göttin
+                            befreit hast, geleitest du Sie zum Palast der Sirona, wo sich die Göttin großzügig bei dir
+                            bedankt.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingSixteen">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSixteen"
+                              aria-expanded="false" aria-controls="collapseSixeen">
+                              Das Reich der Götter (Taranis)
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen"
+                          data-parent="#accordion">
+                          <div class="card-body">
+                            Befreie die "Greife des Taranis" in den Torridonbergen um von ihnen den Weg zu dem "Donner
+                            des Taranis" zu erfahren. Um diese zuerreichen
+                            musst du nämlich die versteckten Pfade finden und den "Endlosen Himmel" erreichen. Hier gilt
+                            es die menschenfressenden Harpyien zu Pfählen
+                            und die Trommeln des Donner zu befreien. Nachdem du diese zu Taranis gebracht hast, erhälst
+                            du mit großen Getöse seine Gunst.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingSeventeen">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                              data-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                              Das Reich der Götter (Artio)
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen"
+                          data-parent="#accordion">
+                          <div class="card-body">
+                            Rette die Bären der "Artio" in den nördlichen Wäldern der Anderwelt um ihre Gunst zu
+                            erlangen. Deine Suche führt dich zum kannibalistischen
+                            Stamm der "Sevem" die die Bären für ihre jagt nach den Menschen der Anderwelt auf
+                            bestialische Weise quälen. Im Anschluss daran erhälst du
+                            von der Göttin das Fell der Kampfes für dein Volk.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingEightteen">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                              data-target="#collapseEightteen" aria-expanded="false" aria-controls="collapseEightteen">
+                              Das Reich der Götter (Noreia)
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseEightteen" class="collapse" aria-labelledby="headingEightteen"
+                          data-parent="#accordion">
+                          <div class="card-body">
+                            Finde die "Kinder der Noreia" im Westen der Anderwelt um ihr zu helfen. Deine Suche führt
+                            dich in die Minen des Trumbar wo dich heimtückische
+                            Fledermäuse, säurehaltige Spinnen und mit unheimliche Schattenwesen angreifen. Nachdem du
+                            die Jünger der Göttin befreit hast, geleitest du
+                            Sie zum Palast der Noreia, wo sich die Göttin großzügig bei dir bedankt und Blicke in die
+                            Zukunft gewährt.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingNineteen">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                              data-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+                              Das Reich der Götter (Ogmios)
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseNineteen" class="collapse" aria-labelledby="headingNineteen"
+                          data-parent="#accordion">
+                          <div class="card-body">
+                            Hilf der Rebellion der "Kempe" im Norden der Anderwelt um diese zum Gleichklang mit ihren
+                            Nachbarn zuführen. Deine Entscheidungen führen dich
+                            zu deren zu den tyrannischen Herrscher der Region, der sich von seinen Sklaven nimmt was er
+                            will. Deine Aufgabe ist es ihn in einen Rededuell
+                            zu schlagen. Im Anschluss wirst du mit der Aufgabe betraut seinen Nachfolger zu ernennen.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwenty">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwenty"
+                              aria-expanded="false" aria-controls="collapseTwenty">
+                              Das Reich der Götter (Cobannus)
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTwenty" class="collapse" aria-labelledby="headingTwenty"
+                          data-parent="#accordion">
+                          <div class="card-body">
+                            Rette den Schmied " Wilher" in den westlichen Bergen der Anderwelt um die Gunst des Gottes
+                            "Cobannus" zu erlangen. Deine Suche führt dich zu
+                            den Steinriesen, die du austricksen und deren Erz was sie hinterlassen für eine neue Rüstung
+                            sammeln sollst. Im Anschluss daran erhälst du
+                            von dem Gott die geweihten Rüstungen des Sieges für dein Volk.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwenty-One">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                              data-target="#collapseTwenty-One" aria-expanded="false"
+                              aria-controls="collapseTwenty-One">
+                              Das Reich der Götter (Arvernus)
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTwenty-One" class="collapse" aria-labelledby="headingTwenty-One"
+                          data-parent="#accordion">
+                          <div class="card-body">
+                            Bekämpfe die feindlichen Stämme und Diebesgruppen im Wald des Nordens der Anderwelt um das
+                            Handelssystem dort zu richten und die Gunst des
+                            Gottes "Arvernus" zu erlangen. Deine Kämpfe führen dich dabei zu den stärksten Waldkriegern
+                            der verschiedenen Gruppen die du in ihren
+                            Kampfarenen besiegen musst. Im Anschluss werden dir zu Ehren Statuen entlang der Pfade
+                            errichtet.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwenty-Two">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                              data-target="#collapseTwenty-Two" aria-expanded="false"
+                              aria-controls="collapseTwenty-Two">
+                              Das Reich der Götter (Cissonius)
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTwenty-Two" class="collapse" aria-labelledby="headingTwenty-Two"
+                          data-parent="#accordion">
+                          <div class="card-body">
+                            Bekämpfe die feindlichen Stämme und Diebesgruppen im Gebirge des Südens der Anderwelt um das
+                            Handelssystem dort zu richten und die Gunst des
+                            Gottes "Cissonius" zu erlangen. Deine Auseinandersetzungen führen dich zu den gebirgigen
+                            Wagenstrecken der Gruppen die du in ihren Gebieten
+                            besiegen musst. Im Anschluss werden dir zu Ehren Statuen entlang der Pfade errichtet.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwenty-Three">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                              data-target="#collapseTwenty-Three" aria-expanded="false"
+                              aria-controls="collapseTwenty-Three">
+                              Das Reich der Götter (Cucullatus)
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTwenty-Three" class="collapse" aria-labelledby="headingTwenty-Three"
+                          data-parent="#accordion">
+                          <div class="card-body">
+                            Rette die kleinwüchsigen "Kobolde des Cucullatus" in den Ebenen des Westens. Hilf ihnen bei
+                            ihrere Reise zu dem Vulkan im Südosten der
+                            Anderwelt zu den schicksalhaften Vulkan von Murdur. Der weg führt dich durch die Wälder der
+                            Ostera und die Sümpfe des Lugh. Nach dem du die
+                            Odyssee beschritten hast erhälst du die Krone der Zwerge.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwenty-Four">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                              data-target="#collapseTwenty-Four" aria-expanded="false"
+                              aria-controls="collapseTwenty-Four">
+                              Der Günstling der Götter (Held der Anderwelt)
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTwenty-Four" class="collapse" aria-labelledby="headingTwenty-Four"
+                          data-parent="#accordion">
+                          <div class="card-body">
+                            Nachdem der Charakter die Gunst der Auserwählten Götter errungen und seine Trophäen erhalten
+                            hat, wird er durch den Rat der Götter zu ihrem
+                            Güstling erwählt. Daraufhin erwacht er im Höhlensystem durch das er die Anderwelt betreten
+                            konnte. In seinem Dorf erhält er durch die Druiden
+                            einen weiteren Segen und die höchste Auszeichung ihres Ordens. Nachdem er die Druidenhöhle
+                            und die Waffenkammer (in dem er die Rüstungen und
+                            Waffen aus der Anderwelt hinterlassen hat) verlässt, erfährt er das es zu einer finalen
+                            Schlacht kommen soll um die Position ihres Stammes in
+                            diesem Teil der Alpen zu festigen. Nachdem Ende dieser Schlacht endet die Hauptstory des
+                            Spieles.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Militärkarte -->
+                <div class="tab-pane fade" id="v-pills-military" role="tabpanel"
+                  aria-labelledby="v-pills-military-tab">
+                  <div id="accordion">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Leben im Krieg (Teil der Tutorialmission "Deine Heimat")
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                          Wandere mit deinem Charakter durch deine Startsiedlung und lerne aus den Ängsten und Wünschen
+                          deines Volkes was für deinen eigenen Stamm das Beste ist.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                          aria-expanded="true" aria-controls="collapseTwo">
+                          Waffenschöpfung (Teil der Tutorialmission "Deine Heimat")
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                        Lerne in der Schmiede deiner Startsiedlung die Techniken der Schmiede und erstelle die
+                        verschiedenen benötigten Waffen für deine Waffenkammer.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                          aria-expanded="false" aria-controls="collapseThree">
+                          Waffentanz (Teil der Tutorialmission "Stammesheld")
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                      <div class="card-body">
+                        Übe den Kampf mit Waffen aus der Waffenkammer mit den Bewohnern deiner Siedlung.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                          aria-expanded="false" aria-controls="collapseFour">
+                          Zielfindung (Teil der Tutorialmission "Jugendbande")
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                      <div class="card-body">
+                        Übe den Kampf mit Pfeil und Bogen bei unterschiedlichen Zielen im Wald und Brachland.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFive">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                          aria-expanded="false" aria-controls="collapseFive">
+                          Hü hot
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                      <div class="card-body">
+                        Reite mit deinem Pferd auf verschiedenen Strecken in der Umgebung deiner Siedlung.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingSix">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                          aria-expanded="false" aria-controls="collapseSix">
+                          Lanzenfeuer
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                      <div class="card-body">
+                        Übe den Kampf mit Lanzen bei unterschiedlichen Gegner in der Umgebung deiner Siedlung.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingSeven">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"
+                          aria-expanded="false" aria-controls="collapseSeven">
+                          Der würdige Krieger
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                      <div class="card-body">
+                        Bestehe den Kriegertest und bekomme die Stimme der Obersten Kriegerin.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingEight">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight"
+                          aria-expanded="false" aria-controls="collapseEight">
+                          Tonfindung
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                      <div class="card-body">
+                        Lerne mit den Signalhorn die unterschiedlichen Töne für den Kampf.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingNine">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine"
+                          aria-expanded="true" aria-controls="collapseNine">
+                          Platz der Krieger
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                      <div class="card-body">
+                        Finde in deiner neuen Siedlung oder in deren Umgebung einen Platz für die Stammeskrieger zum
+                        trainieren.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTen">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen"
+                          aria-expanded="false" aria-controls="collapseTen">
+                          Pfeile müssen fliegen
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                      <div class="card-body">
+                        Finde in deiner neuen Siedlung oder in deren Umgebung ein Areal in dem man für den Pfeilkampf
+                        üben kann.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingEleven">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEleven"
+                          aria-expanded="false" aria-controls="collapseEleven">
+                          Stammeskrieg
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion">
+                      <div class="card-body">
+                        Nimm an einem Kriegsspiel der Stämme und zeigen warum dein Stamm der stärkste ist.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwelve">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwelve"
+                          aria-expanded="false" aria-controls="collapseTwelve">
+                          Kämpfe von Körper und Geist
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">
+                      <div class="card-body">
+                        Erlerne unterschiedliche Stammeskampftechniken, die richtige Anwendung von Kräutermixturen, das
+                        Anwenden von Verstörungstaktiken und
+                        Manipulationstechniken, sowie die Art wie man unterschiedliche Stammescharaktere für den Kampf
+                        animiert.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThirteen">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThirteen"
+                          aria-expanded="false" aria-controls="collapseThirteen">
+                          Gruppenstärke
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Übe mit deinen Stammesmitgliedern unterschiedliche Kampftechniken und wende Sie auf besondere
+                        Ziele gemeinsam an.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFourteen">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFourteen"
+                          aria-expanded="false" aria-controls="collapseFourteen">
+                          Platz der Kämpfer
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Finde in deiner neuen Siedlung oder in deren Umgebung einen Platz für die Stammeskämpfer zum
+                        trainieren.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFiveteen">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFiveteen"
+                          aria-expanded="false" aria-controls="collapseFiveteen">
+                          Stammesmacht
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFiveteen" class="collapse" aria-labelledby="headingFiveteen"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Erobere ein gegnerisches Dorf mit deinen Stamm.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingSixteen">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSixteen"
+                          aria-expanded="false" aria-controls="collapseSixteen">
+                          Glaubensgeheimnisse
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Bringe die Götterbilder der anderen Stämme in Erfahrung um Bündnisse zu stärken und gegnerische
+                        Schwächen zu finden.
+                      </div>
+                    </div>
+                    < class="card">
+                      <div class="card-header" id="headingSeventeen">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeventeen"
+                            aria-expanded="false" aria-controls="collapseSeventeen">
+                            Mächte der Natur
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                          Sammle Kräuter und vergrößere den Mixtur Vorrat für Kampf und Heilung für die
+                          Stammesversorgung.
+                        </div>
+                      </div>
+                      
+
+
+                    
+                  </div>
+                </div>
+                <!-- Herrscherkarte -->
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                aria-labelledby="v-pills-settings-tab">
+                <div id="accordion">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                          aria-expanded="true" aria-controls="collapseOne">
+                          Der Herrscherthron (Teil der Nebenquest "Der würdige Herrscher")
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Der Hauptcharakter des Spieles muss als Teil seiner Ausbildung im Heimatdorf, die
+                        Herrscherprüfung beim Stammeshäuptling bestehen. Teil der
+                        Prüfung ist es "Tugenden eines Herrschers" kennenzulernen und sich durch seine
+                        Persönlichkeit
+                        als würdig zu zeigen. Dadurch verschafft sich
+                        der Spieler neue Waffentechniken und Materialien um dich auf neue Gegner vozubereiten.
+                        Zudem
+                        wird durch die später entstehende Bündnisse die
+                        Kampfkraft des Stammes verstärkt. Bei der Erschaffung von Kriegswaffen kann auch der
+                        Spieler
+                        eigene Wünsche und Ideen einbringen.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="true" aria-controls="collapseTwo">
+                        Die Herrscher der Westalpen: Bande der Herrschenden
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      Nachdem ihr euer Heimatdorf verlassen habt, werdet ihr durch eurem Weg dazu aufgefordert,
+                      euch
+                      mit dem mit eurem Vater verbündeten und neuen
+                      Völker zu beschäftigen. Bündnisse um euer noch junges Volk zu schützen sind dabei
+                      ausschlaggegebend. Am besten sind mindestens 10 Völker in
+                      dieser Region um den besten möglichen Schutz zu erbringen.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        Die Herrscher der Westalpen: Handel des Volkes
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                      Auf eurem Weg werdet ihr dazu aufgefordert, euch mit den Wegesvölkern zu beschäftigen um
+                      euer
+                      junges Volk zu ernähren und anderweitig zu
+                      versorgen. Am besten sind mindestens 7 Völker in dieser Region um die bestmögliche
+                      Versorgung zu
+                      erbringen.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseFour">
+                        Die Herrscher der Westalpen: Verbündete des Schutzes
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                      Durch eure Ausbildung im Herrscherareal, werdet ihr durch eurem Weg dazu aufgefordert,
+                      euch mit
+                      den Wegesvölkern zu beschäftigen und gegebenfalls
+                      Schutzbündnisse auszubauen. Diese könnten im späteren Verlauf bei weiteren Erweiterung
+                      eures
+                      Gebietes helfen. Am besten sind mindestens 5 Völker
+                      in dieser Region um die bestmögliche Vorarbeit zu erbringen.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                        aria-expanded="false" aria-controls="collapseFive">
+                        Die Herrscher der Westalpen: Eroberungen
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                      Aufgrund der Aufgabe eures Vaters, des Häuptlings, der euch darum gebeten hat
+                      Kommunikationswege
+                      zwischen eurem neugegründeten Dorf und seinem zu
+                      errichten, sollt ihre "Kolonien" auf eurer Reise gründen. Diese könnten im späteren
+                      Verlauf bei
+                      weiteren Erweiterung eures Gebietes helfen und
+                      Auswirkung auf nachfolgende Spiele haben. Am besten sind mindestens 7 Kolonien in dieser
+                      Region
+                      um die bestmöglichen Kommunikationswege zu
+                      erbringen.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                        aria-expanded="false" aria-controls="collapseSix">
+                        Die Herrscher der Westalpen: Gegner des Volkes
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
+                      Nachdem ihr euer Heimatdorf verlassen habt, werdet ihr durch eurem Weg dazu aufgefordert,
+                      euch
+                      mit dem mit eurem Heimatstamm verbündeten und
+                      neuen Völker zu beschäftigen. Dadurch werdet ihr mit eurem jungen Volk auf
+                      feindlichgesindet
+                      Menschen treffen die versuchen euch auszurotten.
+                      Deswegen sind verbündete Völker und eure eigenen Kampfstrategien ausschlaggebend für den
+                      Spielerfolg.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingSeven">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"
+                        aria-expanded="false" aria-controls="collapseSeven">
+                        Die Bewährung des Herrschers: Der wahre Herrschende
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                      Nachdem der Charakter eine bestimmte Anzahl von Verbündeten und Gegner entdeckt hat,
+                      fordern die
+                      berechtigten Stammesmitglieder ihn heraus, um
+                      zu sehen, ob dieser des Postens des Anführers würdig ist. Dies geschieht in 13 Runden.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingEight">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight"
+                        aria-expanded="false" aria-controls="collapseEight">
+                        Die Herrscher der Ostalpen: Bande der Herrschenden
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                      Nachdem ihr euren Posten im Stamm verteidigt und das Territorium der keltischen
+                      Hallstadtkultur
+                      erreicht habt, werdet ihr durch eurem Weg dazu
+                      aufgefordert, euch mit den neuen Völker zu verständigen. Bündnisse um euer noch Volk zu
+                      schützen
+                      sind dabei ausschlaggegebend. Am besten sind
+                      mindestens 12 Völker in dieser Region um den besten möglichen Schutz zu erbringen.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingNine">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine"
+                        aria-expanded="true" aria-controls="collapseNine">
+                        Die Herrscher der Ostalpen: Handel des Volkes
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                      Auf eurer weiteren Route müsst ihr um euer Volk zu ernähren und anderweitig zu versorgen,
+                      ebenfalls auch Handelsbündnisse erwirken. Am besten
+                      sind mindestens 7 Völker in dieser Region um die bestmögliche Versorgung zu erbringen.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTen">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen"
+                        aria-expanded="false" aria-controls="collapseTen">
+                        Die Herrscher der Ostalpen: Verbündete des Schutzes
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                    <div class="card-body">
+                      Auf eurer weiteren Route müsst ihr um euer Volk zu beschützen, euch mit den Völkern eurer
+                      Route
+                      beschäftigen und gegebenfalls Schutzbündnisse
+                      aufbauen. Diese könnten im späteren Verlauf bei weiteren Erweiterung eures Gebietes
+                      helfen. Am
+                      besten sind mindestens 5 Völker in dieser Region
+                      um die bestmögliche Vorarbeit zu erbringen.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingEleven">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse"
+                        data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        Die Herrscher der Ostalpen: Eroberungen
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                      Um die Kommunikation mit eurem Heimatdorf und eurem neugegründeten Dorf zugewähren,
+                      solltet ihre
+                      "Kolonien" auf eurer Reise gründen. Diese
+                      könnten im späteren Verlauf bei weiteren Erweiterung eures Gebietes helfen und Auswirkung
+                      auf
+                      nachfolgende Spiele haben. Am besten sind
+                      mindestens 7 Kolonien in dieser Region um die bestmöglichen Kommunikationswege zu
+                      erbringen.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwelve">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse"
+                        data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                        Die Herrscher der Ostalpen: Gegner des Volkes
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                      Nachdem ihr euren Posten im Stamm verteidigt und das Territorium der keltischen
+                      Hallstadtkultur
+                      erreicht habt, werdet ihr durch eurem Weg dazu
+                      aufgefordert, euch mit dem mit eurem Heimatstamm verbündeten und neuen Völker zu
+                      beschäftigen.
+                      Dadurch werdet ihr mit eurem Volk auf
+                      feindlichgesindet Menschen treffen die versuchen euch auszurotten. Deswegen sind
+                      verbündete
+                      Völker und eure eigenen Kampfstrategien
+                      ausschlaggebend für den Spielerfolg.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThirteen">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse"
+                        data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                        Das Stammesoberhaupt
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen"
+                    data-parent="#accordion">
+                    <div class="card-body">
+                      Nachdem der Charakter die Gunst der Stämme in der neuen Region errungen und seine eigene
+                      Siedlung aufgebaut hat, wird er von einer Gruppe von
+                      Stammesmitglieder und neuen Charakteren der Region zum entscheidende Abschlusskampf
+                      herausgefordert. Nachdem er sich bewährt hat, erhält er von
+                      den Mitgliedern seines Clans und neuer Mitglieder die er durch seinen Sieg erhalten hat,
+                      Geschenke um seinen Herrscherraum und das Sakralmonument
+                      würdig aufzubauen. Nachdem Ende dieser Schlacht endet die Hauptstory des Spieles.
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <!-- Versorgungskarte -->
+                <div class="tab-pane fade" id="v-pills-supply" role="tabpanel" aria-labelledby="v-pills-supply-tab">
+                  <div id="accordion">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Grundlagen der Wirtschaft 
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                          Lerne den Aufbau eines Marktes, Handelstechniken, Verkaufsarten, Gewinnerwirkungstechniken und Handelsabschlüsse kennen.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                          aria-expanded="true" aria-controls="collapseTwo">
+                          Handelspakte (Teil der Tutorialmission "Stammesheld")
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                        Erlerne wie du Bündnisse mit anderen Stämmen erstellst und erstelle 12 Handelsrouten auf Land, Wasser oder Gebirgspass.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                          aria-expanded="false" aria-controls="collapseThree">
+                          Güter des Handels
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Erkenne benötigte Waren für deinen Stamm und Bündnisparter und beliefere mit 15 unterschiedlichen Waren.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                          aria-expanded="false" aria-controls="collapseFour">
+                          Handelsstützpunkte
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                      <div class="card-body">
+                        Erstelle auf deiner Reiseroute kleine Handelsstützpunkte mit feststehenden Symbolen um diesen zu festigen.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFive">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                          aria-expanded="false" aria-controls="collapseFive">
+                          Volkshandel
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                      <div class="card-body">
+                        Erwirke in deiner Siedlung mit Hilfe des Handels einen festliegenden Gewinn von 30 Kisten an unterschiedlichen Waren.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingSix">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                          aria-expanded="false" aria-controls="collapseSix">
+                          Gottestribut
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                      <div class="card-body">
+                        Bringe den Gewinn für deine Götter auf und erhalte deren Segen.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingSeven">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"
+                          aria-expanded="false" aria-controls="collapseSeven">
+                          Grundlagen der Versorgung
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Lerne den Aufbau eines Lagers, Versorgungswege, Lagerhüter, Versorger und Versorgungsriten kennen.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingEight">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight"
+                        aria-expanded="false" aria-controls="collapseEight">
+                        Reiseversorgung
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Entdecke auf deiner Reiseroute Versorgungsgüter um den Stamm zu unterstützen.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingNine">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine"
+                          aria-expanded="true" aria-controls="collapseNine">
+                          Göttliche Versorgung
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                      <div class="card-body">
+                        Sorge dafür, dass die Götter während eurer Reise die Versorgung segnen.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTen">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen"
+                        aria-expanded="false" aria-controls="collapseTen">
+                        Der Lagerplatz
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                      <div class="card-body">
+                        Errichte in deine neuen Siedlung ein Straßensystem um das Hauptlager mit Nebenlagern zu verbinden um deinen Stamm zu versorgen.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingEleven">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEleven"
+                          aria-expanded="false" aria-controls="collapseEleven">
+                          Bewahrung und Versorgung
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Errichte in deiner neuen Siedlung eine Gruppe von loyalen Mitarbeitern um die Versorgung zu gewähren und zu schützen.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwelve">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwelve"
+                          aria-expanded="false" aria-controls="collapseTwelve">
+                          Göttliches Lager
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Erstelle mehrere Hüter Symbole für einen Versorgungssegnung.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThirteen">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                          data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                          Handelswege
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Bringe deine Lager in den Vertrieb für dein Dorf und den Handel ein und erreiche einen gut funktionierendes Handelssystem.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFourteen">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                          data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                          Grundlagen der Landwirtschaft
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Lerne den Umgang mit Feldfrüchten und Nutztieren, Anbaustechniken, Trankbrauung und Kochgerichte kennen.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFiveteen">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                          data-target="#collapseFiveteen" aria-expanded="false" aria-controls="collapseFiveteen">
+                          Feldverpflegung
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFiveteen" class="collapse" aria-labelledby="headingFiveteen"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Entdecke mindestens 24 Jagdplätze und 10 Pflanzen entlang deiner Reiseroute und finde heraus ob sich diese für die Landwirtschaft eignen.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFiveteen">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                        data-target="#collapseFiveteen" aria-expanded="false" aria-controls="collapseFiveteen">
+                        Früchte des Feldes und des Waldes
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFiveteen" class="collapse" aria-labelledby="headingFiveteen"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Entdecke Anbauflächen in der Nähe deiner neuen Siedlung und nehme Sie in Besitz. Sichte zudem gute Sammel- und Jagdplätze in der neuen Region.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingSixteen">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                        data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                        Wege des Wassers
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Erbaue ein Hafen im Bereich deines neuen Dorfes zur Wasserversorgung, Angeln und Handelswege.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingSeventeen">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                          data-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                          Grundlagen der Keramiken
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Lerne die Arten und Formen, Verzierungstechniken, Brennprozesse und Stammeszeichen kennen.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingEightteen">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                          data-target="#collapseEightteen" aria-expanded="false" aria-controls="collapseEightteen">
+                          Neue Erdgründe
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseEightteen" class="collapse" aria-labelledby="headingEightteen"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Entdecke neue Erden um bessere oder kunstvollere Keramiken zu erstellen.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingNineteen">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                          data-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+                          Neue Keramiken
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseNineteen" class="collapse" aria-labelledby="headingNineteen"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Entdecke mindestens 6 neue Formgebungstechniken bei den Nachbarstämmen um diese deinen Handwerkern zu zeigen.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwenty">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwenty"
+                        aria-expanded="false" aria-controls="collapseTwenty">
+                        Das Keramikareal
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwenty" class="collapse" aria-labelledby="headingTwenty" data-parent="#accordion">
+                      <div class="card-body">
+                        Errichte in deiner neuen Siedlung einen Bereich in dem das Keramikareal erstellt wird und hilf bei deren Aufbau.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwenty-One">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwenty-One"
+                        aria-expanded="false" aria-controls="collapseTwenty-One">
+                        Grundlagen der Metallurgie
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwenty-One" class="collapse" aria-labelledby="headingTwenty-One" data-parent="#accordion">
+                      <div class="card-body">
+                        Lerne die Arten und Formen, Verzierungstechniken, Brenn- und Trocknungsprozesse und Stammessymbole kennen.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwenty-Two">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                          data-target="#collapseTwenty-Two" aria-expanded="false" aria-controls="collapseTwenty-Two">
+                          Neue Legierungen
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwenty-Two" class="collapse" aria-labelledby="headingTwenty-Two"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        Suche und finde mehrere gute Erzarten entlang deiner Reiseroute um diese für die Schmiede in deiner Siedlung zu verwenden.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwenty-Three">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwenty-Three"
+                        aria-expanded="false" aria-controls="collapseTwenty-Three">
+                        Das Metallareal
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwenty-Three" class="collapse" aria-labelledby="headingTwenty-Three" data-parent="#accordion">
+                      <div class="card-body">
+                        Errichte in deiner neuen Siedlung einen Bereich in dem das Metallareal erstellt wird und hilf bei deren Aufbau.
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <p class="card-text"><small class="text-muted">Letztes Update: <span style="color:black"><b>06.06.2023</b></span>
+      </small></p>
+  </div>
+  </div>
+  <!-- SEITENENDE -->
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script>
+    $(".nav-item").click(function () {
+      $("#menue").collapse('hide');
+      $("#menue .bg-primary").removeClass(".bg-primary");
+      $(this).addClass("bg-primary");
+    })
+    $(".dropdown").click(function () {
+      if (!$(this).hasClass("show")) return;
+      $("#menue li>bg-primary").removeClass("bg-primary");
+      $(this).addClass("bg-primary");
+    })
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
