@@ -9,8 +9,10 @@
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="icon" sizes="192x192" href="Bilder/Celtic Logo.png">
-  <link rel="stylesheet" href="history.css">
-  <script src="history.js"></script>
+  <!-- Link eines angepassten CSS-Stylesheet -->
+  <link rel="stylesheet" href="style/history.css">
+  <!-- Skript der JavaScript Funktionen-->
+  <script type="text/javascript" src="lib/history.js"></script>
   <title>Geschichtlicher Hintergrund von Celtic</title>
 </head>
 <style>
@@ -26,56 +28,54 @@
 <body>
   <div id="pic" class="d-none d-sm-block"></div>
   <!-- NAVIGATIONSLEISTE -->
-  <div class="container-fluid">
-    <div class="row">
-      <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: #175815;">
-        <div class="container-fluid">
-          <span class="navbar-brand"></span>
-          <div id=menue class="collapse navbar-collapse">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html"><b>Startseite</b></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false"><b>Handlung</b></a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="1. Prolog.html">Prolog</a></li>
-                  <li><a class="dropdown-item" href="2. Hauptstory.html">Hauptstory - Westliche Alpen</a></li>
-                    <li><a class="dropdown-item" href="3. Nebenstory.html">Nebenstorys</a></li>
-                  <li><a class="dropdown-item" href="4. Völker.html">Völker</a></li>
-                  <li><a class="dropdown-item" href="5. Sammlungen.html">Sammlungen</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="10. Geschichte.html"><b>Geschichtlicher Hintergrund</b></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false"><b>Gameplay</b></a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="20. Spielprinzip.html">Spielprinzip</a></li>
-                  <li><a class="dropdown-item" href="21. Technik.html">Technik</a></li>
-                  <li><a class="dropdown-item" href="22. Charaktere.html">Charaktere</a></li>
-                  <li><a class="dropdown-item" href="23. Umgebungen.html">Umgebungen</a></li>
-                  <li><a class="dropdown-item" href="24. Bauwerke.html">Bauwerke</a></li>
-                  <li><a class="dropdown-item" href="25. Kaufleute in den Alpen.html">Kaufleute</a></li>
-                  <li><a class="dropdown-item" href="26. Gegenstände in der Spielwelt.html">Gegenstände</a></li>
-                  <li><a class="dropdown-item" href="27. Geräusche.html">Geräusche</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Celtic I Projekttagebuch.html"><b>Projekttagebuch</b></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Celtic I Impressum.html"><b>Datenschutz und Impressum</b></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <!-- SEITENINHALT -->
+  <div class="row">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: #175815;">
+      <div class="container-fluid">
+        <span class="navbar-brand"></span>
+        <div id=menue class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><b>Startseite</b></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><b>Handlung</b></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="1. Prolog.html">Prolog</a></li>
+                <li><a class="dropdown-item" href="2. Hauptstory.html">Hauptstory - Westliche Alpen</a></li>
+                  <li><a class="dropdown-item" href="3. Nebenstory.html">Nebenstorys</a></li>
+                <li><a class="dropdown-item" href="4. Völker.html">Völker</a></li>
+                <li><a class="dropdown-item" href="5. Sammlungen.html">Sammlungen</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="10. Geschichte.html"><b>Geschichtliches</b></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><b>Gameplay</b></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="20. Spielprinzip.html">Spielprinzip</a></li>
+                <li><a class="dropdown-item" href="21. Technik.html">Technik</a></li>
+                <li><a class="dropdown-item" href="22. Charaktere.html">Charaktere</a></li>
+                <li><a class="dropdown-item" href="23. Umgebungen.html">Umgebungen</a></li>
+                <li><a class="dropdown-item" href="24. Bauwerke.html">Bauwerke</a></li>
+                <li><a class="dropdown-item" href="25. Kaufleute in den Alpen.html">Kaufleute</a></li>
+                <li><a class="dropdown-item" href="26. Gegenstände in der Spielwelt.html">Gegenstände</a></li>
+                <li><a class="dropdown-item" href="27. Geräusche.html">Geräusche</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Celtic I Projekttagebuch.html"><b>Projekttagebuch</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Celtic I Impressum.html"><b>Datenschutz und Impressum</b></a>
+            </li>
+          </ul>
+        </div> 
+      </div>
+    </nav>
+    <!-- Bootstrap Card Darstellung von Zeitabschnitten -->
     <div class="row">
       <section class="section intro">
         <div class="container">
@@ -85,6 +85,7 @@
       </section>
       <section class="timeline">
         <p><br></p>
+        <!-- Darstellung der Bewegungsfunktionen-->
         <div class="arrows">
           <button class="arrow arrow__prev disabled" disabled>
             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
@@ -444,6 +445,7 @@
             </div>
           </li>
         </ol>
+        <!-- Darstellung der Bewegungsfunktionen-->
         <div class="arrows">
           <button class="arrow arrow__prev disabled" disabled>
             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
@@ -456,9 +458,11 @@
       <p><br></p>
     </div>
     <!-- SEITENENDE -->
+    <!-- Skript der JavaScript Funktionen-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"></script>
+    <!-- Vorbereitung für Aussonderung der Navigation-->
     <script>
       $(".nav-item").click(function () {
         $("#menue").collapse('hide');
