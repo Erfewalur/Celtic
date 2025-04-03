@@ -3,17 +3,42 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Celtic - Die Alpen in der Antike</title>
+    <link rel="stylesheet" type="text.css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="stylesheet" href="navigationsleiste.css">
+        <script src="navigationsleiste.js" defer></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="icon" sizes="192x192" href="Bilder/Celtic Logo.png">
-    <title>Celtic - Die Alpen in der Antike</title>
+    <link rel="icon" sizes="192x192" href="Bilder/Celtic Logo.png">   
   </head> 
+
+  <body>
+    <header class="mitte">
+      <div id="hauptnavigation">
+          <div class="logobereich">
+              <a href="index.html" class="nav-logo"></a>
+          </div>
+          <div class="logobereich">
+            <a href="index.html" class="nav-gods"></a>
+        </div>
+          <div class="logobereich">
+            <a href="index.html" class="nav-logo2"></a>
+        </div>
+          
+          <a href="javascript:void(0);" class="hamburger-icon" onclick="navigationUmschalten()">
+              <i class="fa fa-bars"></i>
+          </a>
+      </div>
+    </header>
+
   <style>
     #pic{
-      background: url(Bilder/Celtic\ Profil\ 4.webp) center no-repeat ;
+      background: url(Bilder/Kelten.png) center no-repeat ;      
       background-size: cover;
-      height: 480px;
+      height: 500px;
       overflow: hidden;
     }
   </style>
@@ -28,39 +53,35 @@
             <div id=menue class="collapse navbar-collapse">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html"><b>Startseite</b></a>
+                  <a class="nav-link" href="index.html"><b>Home</b></a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Handlung</b></a>
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Die Welt der Kelten</b></a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="1. Prolog.html">Prolog</a></li>
-                    <li><a class="dropdown-item" href="2. Hauptstory.html">Hauptstory - Westliche Alpen</a></li>
-                    <li><a class="dropdown-item" href="3. Nebenstory.html">Nebenstorys</a></li>
-                    <li><a class="dropdown-item" href="4. Völker.html">Völker</a></li>
-                    <li><a class="dropdown-item" href="5. Sammlungen.html">Sammlungen</a></li>
+                    <li><a class="dropdown-item" href="1. Umwelt.html">Die Umwelt</a></li>
+                    <li><a class="dropdown-item" href="2. Glaube.html">Der Glaube</a></li>
+                    <li><a class="dropdown-item" href="3. Politik.html">Die Politik</a></li>
+                    <li><a class="dropdown-item" href="4. Versorgung.html">Die Versorgung</a></li>
+                    <li><a class="dropdown-item" href="5. Technik.html">Die Technik</a></li>
+                    <li><a class="dropdown-item" href="6. Völker.html">Die Völker</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Celtic I Infos</b></a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="11. News.html">News</a></li>
+                    <li><a class="dropdown-item" href="12. Entwürfe.html">Entwürfe</a></li>
+                    <li><a class="dropdown-item" href="13. Roadmap.html">Roadmap</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="10. Geschichte.html"><b>Geschichtliches</b></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Gameplay</b></a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="20. Spielprinzip.html">Spielprinzip</a></li>
-                    <li><a class="dropdown-item" href="21. Technik.html">Technik</a></li>
-                    <li><a class="dropdown-item" href="22. Charaktere.html">Charaktere</a></li>
-                    <li><a class="dropdown-item" href="23. Umgebungen.html">Umgebungen</a></li>
-                    <li><a class="dropdown-item" href="24. Bauwerke.html">Bauwerke</a></li>
-                    <li><a class="dropdown-item" href="25. Kaufleute in den Alpen.html">Kaufleute</a></li>
-                  <li><a class="dropdown-item" href="26. Gegenstände in der Spielwelt.html">Gegenstände</a></li>
-                  <li><a class="dropdown-item" href="27. Geräusche.html">Geräusche</a></li>
-                  </ul>
+                  <a class="nav-link" href="21. Shop.html"><b>Shop</b></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="31. Projekttagebuch.html"><b>Projekttagebuch</b></a>
+                  <a class="nav-link" href="31. Projekttagebuch.html"><b>Tagebuch</b></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="32. Datenschutz und Impressum.html"><b>Datenschutz und Impressum</b></a>
+                  <a class="nav-link" href=""><b>[In Arbeit]</b></a>
                 </li>
               </ul>
             </div>
@@ -68,34 +89,41 @@
         </nav>
     </div>
     <!-- Präsentation der Website -->
-    <div class="card-group">
-      <div class="row">
+    <div class="row">
+    <div class="card text-center" style="width: 120rem; background-color: #30a12c;">   
+      <div class="card-body">
+        <h5 class="card-title"><b>Das Celtic Projekt</b></h5>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="card text-center" style="width: 118rem; background-color: #3a2a07c7;">   
+    <div class="card-body">
+      <h5 class="card-title"><b>Erkunden. Erleben. Erschaffen</b></h5>
+    </div>
+  </div>
+  <br>
+  <br> 
+    <div>
+    <div class="col d-flex justify-content-center">
+    <div class="card-group w-60">
       <div class="card border bg-transparent">
-        <div class="card-body" style="height: auto;">
-          <p><br></p>
+        <div class="card-body" style="height: auto; width: 80rem;">
           <p><b>Herzlich Willkommen im Celtic Projekt</b></p>
             <p>Der Grundgedanke zu diesem Projekt ist es die Entwicklung meiner Computerspielidee zu veranschaulichen und den Prozess nachzuverfolgen. 
               Mit der heutigen Technologie und dem immer mehr aufkommenden Wissen über die Vergangenheit unserer europäischen Vorgängerkulturen, möchte 
               ich das Wissen über deren Kultur, Religion und Natur dem Kunden näher bringen.</p>
-              <p><b>Handlung</b>: Hier drunter finden sich der Aufbau der Hauptstory, Konzepte zu Nebenstorys, die Völker im Raum der Open World und Sammlungsgegenstände.</p>
-              <p><b>Geschichte</b>: Der historische Schwerpunkt wird aufgrund der archäologischen Punkte an dieser Stelle zusammengetragen.</p>
-              <p><b>Gameplay</b>: Hier finden sich der Informationen über das Spielprinzip, Technische Grundlagen, Umgebungsmaterialien im Vergleich Real vs. Spiel und Geräuschsbeispiele.</p>
-              <p><b>Projekttagebuch</b>: In diesem werden monatliche Updates hinterlegt die den Projektverlauf veranschaulichen sollen.</p>
-              <p>Im Gesamtprojekt soll die Geschichte der Kelten über drei Open-World Spiele, von ihren Beginn in der Hallstattzeit um ca. 750 v.u.Z., 
-                über die Mittellatene um ca. 350 v.u.Z. und die Spätlatène um die Epoche der Zeitenwende erzählt werden. In einem vierten Game was nach 
-                dem Ende der Kelten im heutigen Kaukasus spielt, soll in einem MMO versucht werden die keltische Kultur zu bewahren.</p>
             </p>
             <p><br></p>
           <div class="d-flex align-items-start">
         </div>
           <p class="card-text"><small class="text-muted">Letztes Update: <span style="color:black"><b>02.06.2023</b></span> </small></p>
-          <p><br></p>
       </div>
     </div>
   </div>
   </div>
+  <br>
     <!-- SEITENENDE -->
-    <div class="row">
     </div>
         <!-- Vorbereitung für Aussonderung der Navigation-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
