@@ -1,24 +1,49 @@
 <html lang="de">
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Celtic - Die Alpen in der Antike</title>
+    <link rel="stylesheet" type="text.css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="stylesheet" href="navigationsleiste.css">
+        <script src="navigationsleiste.js" defer></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="icon" sizes="192x192" href="Bilder/Celtic Logo.png">
-    <title>Prolog - Aller Anfang ist Schwer</title>
-</head> 
-<style>
-  #pic{
-    background: url(Bilder/Celtic\ Profil\ 4.webp) center no-repeat ;
-    background-size: cover;
-    height: 480px;
-    overflow: hidden;
-  }
-</style>
-<body>
-  <div id="pic" class="d-none d-sm-block"></div>
+    <link rel="icon" sizes="192x192" href="Bilder/Celtic Logo.png">   
+  </head> 
+
+  <body>
+    <header class="mitte">
+      <div id="hauptnavigation">
+          <div class="logobereich">
+              <a href="index.html" class="nav-logo"></a>
+          </div>
+          <div class="logobereich">
+            <a href="index.html" class="nav-gods"></a>
+        </div>
+          <div class="logobereich">
+            <a href="index.html" class="nav-logo2"></a>
+        </div>
+          
+          <a href="javascript:void(0);" class="hamburger-icon" onclick="navigationUmschalten()">
+              <i class="fa fa-bars"></i>
+          </a>
+      </div>
+    </header>
+
+  <style>
+    #pic{
+      background: url(Bilder/Kelten.png) center no-repeat ;      
+      background-size: cover;
+      height: 700px;
+      overflow: hidden;
+    }
+  </style>
+  <body>
+    <div id="pic" class="d-none d-sm-block"></div>
 <!-- NAVIGATIONSLEISTE -->
 <div class="container-fluid">
   <div class="row">
@@ -28,46 +53,42 @@
             <div id=menue class="collapse navbar-collapse">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html"><b>Startseite</b></a>
+                  <a class="nav-link" href="index.html"><b>Home</b></a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Handlung</b></a>
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Die Welt der Kelten</b></a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="1. Prolog.html">Prolog</a></li>
-                    <li><a class="dropdown-item" href="2. Hauptstory.html">Hauptstory - Westliche Alpen</a></li>
-                    <li><a class="dropdown-item" href="3. Nebenstory.html">Nebenstorys</a></li>
-                    <li><a class="dropdown-item" href="4. Völker.html">Völker</a></li>
-                    <li><a class="dropdown-item" href="5. Sammlungen.html">Sammlungen</a></li>
+                    <li><a class="dropdown-item" href="1. Umwelt.html">Die Umwelt</a></li>
+                    <li><a class="dropdown-item" href="2. Glaube.html">Der Glaube</a></li>
+                    <li><a class="dropdown-item" href="3. Politik.html">Die Politik</a></li>
+                    <li><a class="dropdown-item" href="4. Landwirtschaft.html">Die Landwirtschaft</a></li>
+                    <li><a class="dropdown-item" href="5. Handel.html">Der Handel</a></li>
+                    <li><a class="dropdown-item" href="6. Völker.html">Die Völker</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Celtic I Infos</b></a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="11. News.html">News</a></li>
+                    <li><a class="dropdown-item" href="12. Entwürfe.html">Entwürfe</a></li>
+                    <li><a class="dropdown-item" href="13. Roadmap.html">Roadmap</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="10. Geschichte.html"><b>Geschichtliches</b></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Gameplay</b></a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="20. Spielprinzip.html">Spielprinzip</a></li>
-                    <li><a class="dropdown-item" href="21. Technik.html">Technik</a></li>
-                    <li><a class="dropdown-item" href="22. Charaktere.html">Charaktere</a></li>
-                    <li><a class="dropdown-item" href="23. Umgebungen.html">Umgebungen</a></li>
-                    <li><a class="dropdown-item" href="24. Bauwerke.html">Bauwerke</a></li>
-                    <li><a class="dropdown-item" href="25. Kaufleute in den Alpen.html">Kaufleute</a></li>
-                  <li><a class="dropdown-item" href="26. Gegenstände in der Spielwelt.html">Gegenstände</a></li>
-                  <li><a class="dropdown-item" href="27. Geräusche.html">Geräusche</a></li>
-                  </ul>
+                  <a class="nav-link" href="21. Shop.html"><b>Shop</b></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="31. Projekttagebuch.html"><b>Projekttagebuch</b></a>
+                  <a class="nav-link" href="31. Projekttagebuch.html"><b>Tagebuch</b></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="32. Datenschutz und Impressum.html"><b>Datenschutz und Impressum</b></a>
+                  <a class="nav-link" href=""><b>[In Arbeit]</b></a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
     </div>
-  <!-- Bootstrap Card 1: Missionen -->
+<!-- Bootstrap Card 1: Missionen -->
   <div class="card-group">
     <div class="row">
     <div class="card" style="width: 100%;">
@@ -293,26 +314,24 @@
 </div>
 </div>
 <div class="row"></div>
-      </div>
-    </div>
-  <!-- SEITENENDE -->
-  </div>
-  </div>
-  <!-- Vorbereitung für Aussonderung der Navigation-->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-      <script>
-        $(".nav-item").click(function(){$("#menue").collapse('hide');
-        $("#menue .bg-primary").removeClass(".bg-primary");
-        $(this).addClass("bg-primary");
-      })
-        $(".dropdown").click(function(){
-        if(!$(this).hasClass("show")) return;
-          $("#menue li>bg-primary").removeClass("bg-primary");
-          $(this).addClass("bg-primary");
-        })
-      </script>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    </body>
-    </html>
+      <br>
+        <!-- SEITENENDE -->
+        </div>
+            <!-- Vorbereitung für Aussonderung der Navigation-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+            <script>
+              $(".nav-item").click(function(){$("#menue").collapse('hide');
+              $("#menue .bg-primary").removeClass(".bg-primary");
+              $(this).addClass("bg-primary");
+            })
+              $(".dropdown").click(function(){
+              if(!$(this).hasClass("show")) return;
+                $("#menue li>bg-primary").removeClass("bg-primary");
+                $(this).addClass("bg-primary");
+              })
+            </script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+          </body>
+          </html>
